@@ -1,0 +1,38 @@
+{
+    "additional-repositories": [
+        "multilib"
+    ],
+    "audio": "pipewire",
+    "bootloader": "grub-install",
+    "config_version": "2.5.5",
+    "debug": false,
+    "disk_encryption": null,
+    "harddrives": [
+        "/dev/sda"
+    ],
+    "hostname": "archer",
+    "mirror-region": {},
+    "nic": {
+        "dhcp": true,
+        "dns": null,
+        "gateway": null,
+        "iface": null,
+        "ip": null,
+        "type": "nm"
+    },
+    "no_pkg_lookups": false,
+    "offline": false,
+    "packages": [
+        "git",
+        "nano"
+    ],
+    "profile": {
+        "path": "/usr/lib/python3.10/site-packages/archinstall/profiles/minimal.py"
+    },
+    "script": "guided",
+    "silent": false,
+    "sys-encoding": "utf-8",
+    "sys-language": "en_US",
+    "timezone": "Asia/Manila",
+    "version": "2.5.5"
+}
