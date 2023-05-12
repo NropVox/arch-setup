@@ -1,7 +1,7 @@
 set -e
 
 #remove pass from user to skip sudo password
-#passwd -d aj
+passwd -d aj
 
 ## install yay
 cd /opt
