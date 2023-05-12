@@ -7,7 +7,7 @@ cd /opt
 git clone https://aur.archlinux.org/yay-git.git
 chown aj:aj yay-git
 cd yay-git
-makepkg -si --noconfirm << EOF
+sudo -u aj makepkg -si --noconfirm << EOF
 $password
 EOF
 
