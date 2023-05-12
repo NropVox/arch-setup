@@ -4,6 +4,12 @@ set -e
 #passwd -d aj
 
 ## install yay
+cd /opt
+git clone https://aur.archlinux.org/yay-git.git
+chown aj:aj yay-git
+cd yay-git
+sudo -u aj makepkg -si --noconfirm
+cd /
 
 ## install gnome
 pacman -S gnome-shell gnome-terminal nautilus gnome-system-monitor gnome-control-center evince firefox gvfs gvfs-mtp gvfs-smb --noconfirm
