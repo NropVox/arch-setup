@@ -1,4 +1,4 @@
-sed -e
+set -e
 
 
 # install yay
