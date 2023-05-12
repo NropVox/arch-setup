@@ -1,1 +1,1 @@
-chroot /mnt/archinstall
+arch-chroot /mnt/archinstall
