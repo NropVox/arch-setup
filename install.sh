@@ -1,5 +1,7 @@
 #!/usr/bin/bash
 
+set -e
+
 #setup pacman
 pacman_conf=/etc/pacman.conf
 sed '/s/#ParallelDownloads/ParallelDownloads/' $pacman_conf > $pacman_conf.tmp
