@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/bash
 
 #setup pacman
 pacman_conf=/etc/pacman.conf
