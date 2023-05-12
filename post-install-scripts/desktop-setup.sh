@@ -6,7 +6,7 @@ set -e
 # install yay
 
 # install gnome
-pacman -S gnome-shell gnome-terminal nautilus gnome-system-monitor gnome-control-center gvfs gvfs-mtp gvfs-smb
+pacman -S gnome-shell gnome-terminal nautilus gnome-system-monitor gnome-control-center gvfs gvfs-mtp gvfs-smb --noconfirm
 
 # install display manager
 yay -S ly --noconfirm
