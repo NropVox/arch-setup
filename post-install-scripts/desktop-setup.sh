@@ -1,3 +1,6 @@
 #test
 
-pacman -Syu
+# install yay
+
+# install gnome
+
