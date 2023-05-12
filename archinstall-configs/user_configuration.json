@@ -11,7 +11,14 @@
         "/dev/vda"
     ],
     "hostname": "archer",
-    "mirror-region": {},
+    "mirror-region": {"Japan": {
+            "http://ftp.jaist.ac.jp/pub/Linux/ArchLinux/$repo/os/$arch": true,
+            "http://ftp.tsukuba.wide.ad.jp/Linux/archlinux/$repo/os/$arch": true, 
+            "http://mirrors.cat.net/archlinux/$repo/os/$arch": true, 
+            "https://ftp.jaist.ac.jp/pub/Linux/ArchLinux/$repo/os/$arch": true,
+            "https://mirrors.cat.net/archlinux/$repo/os/$arch": true
+        }
+    },
     "nic": {
         "dhcp": true,
         "dns": null,
