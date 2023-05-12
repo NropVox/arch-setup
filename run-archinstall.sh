@@ -1,3 +1,5 @@
+#Goods
+
 set -e
 
 configpath=archinstall-configs
