@@ -1,5 +1,9 @@
 set -e
 
+# set up user
+useradd aj
+echo "aj ALL=(ALL) ALL" > /etc/sudoers.d/00_aj
+
 #remove pass from user to skip sudo password
 passwd -d aj
 
@@ -39,3 +43,11 @@ pacman -S evince firefox --noconfirm
 
 ## config keybinds
 # python3 /home/aj/.pis/keybind.py hehe nautilus /media/aj/.hehe
+
+# setup root password
+echo Set Root Password
+passwd
+
+#setup user password
+echo Set User Password
+passwd aj
