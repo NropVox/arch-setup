@@ -1,9 +1,5 @@
 set -e
 
-# set up user
-useradd aj
-echo "aj ALL=(ALL) ALL" > /etc/sudoers.d/00_aj
-
 #remove pass from user to skip sudo password
 passwd -d aj
 
@@ -23,7 +19,7 @@ sudo -u aj yay -S ly --noconfirm
 systemctl enable ly
 
 ## install personal essential apps
-pacman -S evince firefox --noconfirm
+pacman -S evince firefox xorg --noconfirm
 
 ## automount
 # uuid=$(blkid | grep /dev/sdb1 | grep -oP '\sUUID="\K[\w-]+')
