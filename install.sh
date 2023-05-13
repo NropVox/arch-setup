@@ -23,7 +23,7 @@ config=$configpath/user_configuration.json
 creds=$configpath/user_credentials.json
 disklayout=$configpath/user_disk_layout.json
 
-archinstall --config $config --creds $creds --disk_layouts $disklayout --silent
+archinstall --config $config --disk_layouts $disklayout --silent
 
 #run chroot
 iprint "Configure Desktop"
