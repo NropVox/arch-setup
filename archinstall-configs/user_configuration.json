@@ -8,7 +8,7 @@
     "debug": false,
     "disk_encryption": null,
     "harddrives": [
-        "/dev/vda"
+        "/dev/sda"
     ],
     "hostname": "archer",
     "keyboard-layout": "us",
