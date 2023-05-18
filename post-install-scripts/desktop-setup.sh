@@ -21,6 +21,7 @@ systemctl enable gdm
 
 ## install personal essential apps
 pacman -S evince firefox --noconfirm
+yay -S extension-manager spotify --noconfirm
 
 ## automount
 uuid=jk #$(blkid | grep /dev/sdb1 | grep -oP '\sUUID="\K[\w-]+')
@@ -33,8 +34,8 @@ EOF
 
 mount -a
 
-## link personal folders
-ln -s /media/aj/backup/android /home/aj
+# link personal folders
+ln -s /media/aj/backup/android-os /home/aj
 ln -s /media/aj/backup/scripts /home/aj
 ln -s /media/aj/backup/Projects /home/aj
 
@@ -44,8 +45,6 @@ python3 /home/aj/.pis/keybind.py 'hehe browser' '/usr/lib/firefox/firefox --prof
 python3 /home/aj/.pis/keybind.py 'Explorer' 'nautilus ~' '<Super>e'
 python3 /home/aj/.pis/keybind.py 'Task Manager' 'gnome-system-monitor' '<Control><Shift>Escape'
 python3 /home/aj/.pis/keybind.py 'Terminal' 'gnome-terminal' '<Super>t'
-
-
 
 # config firefox.desktop
 firefox_desktop=/usr/share/applications/firefox.desktop

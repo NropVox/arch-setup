@@ -9,8 +9,9 @@ iprint() {
     echo $1
 }
 
-#setup pacman
+# setup pacman
 iprint "Pacman Setup"
+#Sup panacma
 pacman_conf=/etc/pacman.conf
 sed 's/#ParallelDownloads/ParallelDownloads/' $pacman_conf > $pacman_conf.tmp
 mv $pacman_conf $pacman_conf.bak
