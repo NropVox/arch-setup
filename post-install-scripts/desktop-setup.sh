@@ -24,7 +24,7 @@ pacman -S evince firefox --noconfirm
 yay -S extension-manager spotify --noconfirm
 
 ## automount
-uuid=jk #$(blkid | grep /dev/sdb1 | grep -oP '\sUUID="\K[\w-]+')
+uuid=$(blkid | grep /dev/sdb1 | grep -oP '\sUUID="\K[\w-]+')
 mkdir -p /media/aj
 cat << EOF >> /etc/fstab
 
